@@ -54,6 +54,7 @@ withEnv(["AWS_REGION=${kaizen}"]) {
    packer init .
    packer build -var 'jenkins_build_number=${buildNumber}' packer.pkr.hcl
      """
+     
 
  build job: 'hello-world', 
  parameters: [
